@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="EtNormal">
+		<item name="android:maxLines">1</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="EtNormal.ParentMargin" parent="ParentMargin">
+		<item name="android:maxLines">1</item>
+		<item name="android:background">@android:color/transparent</item>
+		<item name="android:gravity">center_vertical</item>
+	</style>
+
+	<style name="BtnNormal">
+		<item name="android:background">@drawable/common_btn_bg</item>
+	</style>
+
+	<style name="BtnNormal.ParentMargin" parent="ParentMargin">
+		<item name="android:background">@drawable/common_btn_bg</item>
+	</style>
+
+
+	<style name="TvNormal">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<style name="TvNormal.TitleStyle" parent="TvNormal">
+		<item name="android:textColor">@color/color333</item>
+		<item name="android:textSize">@dimen/sp_14</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">38dp</item>
+		<item name="android:paddingStart">@dimen/parent_margin</item>
+		<item name="android:paddingLeft">@dimen/parent_margin</item>
+	</style>
+
+	<style name="ParentMargin">
+		<item name="android:layout_marginStart">@dimen/parent_margin</item>
+		<item name="android:layout_marginLeft">@dimen/parent_margin</item>
+		<item name="android:layout_marginRight">@dimen/parent_margin</item>
+		<item name="android:layout_marginEnd">@dimen/parent_margin</item>
+	</style>
+
+	<style name="LeftParentMargin">
+		<item name="android:layout_marginStart">@dimen/parent_margin</item>
+		<item name="android:layout_marginLeft">@dimen/parent_margin</item>
+	</style>
+
+	<style name="RightParentMargin">
+		<item name="android:layout_marginRight">@dimen/parent_margin</item>
+		<item name="android:layout_marginEnd">@dimen/parent_margin</item>
+	</style>
+</resources>

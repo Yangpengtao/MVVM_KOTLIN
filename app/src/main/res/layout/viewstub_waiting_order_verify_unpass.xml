@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="14dp"
+		android:background="#ffeeee" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="24dp"
+		app:srcCompat="@drawable/main_verify_butongguo" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="18dp"
+		android:text="身份认证未通过，请重新认证"
+		android:textColor="#ff0000"
+		android:textSize="@dimen/sp_14" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="原因：请上传露出完整五官且清晰手持身份证正面照片"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_12" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="如有疑问，请咨询：400-000-0000"
+		android:textColor="@color/color999"
+		android:textSize="@dimen/sp_12" />
+
+	<Button
+		style="@style/BtnNormal"
+		android:layout_width="150dp"
+		android:layout_height="38dp"
+		android:layout_marginTop="50dp"
+		android:text="重新认证" />
+</LinearLayout>

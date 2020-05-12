@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oomall.kouclodelivery.ui.widget.SlidingConfictSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/swipe_refresh_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:focusableInTouchMode="false"
+	android:orientation="vertical"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context=".ui.view.main.fragment.ReceivedOrderFragment">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<LinearLayout
+			android:id="@+id/ll_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:visibility="gone">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="30dp"
+				android:background="#ffeeee"
+				android:gravity="center"
+				android:text="有新的订单，请点击“刷新”"
+				android:textColor="#fb3533"
+				android:textSize="12sp" />
+
+			<androidx.coordinatorlayout.widget.CoordinatorLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<com.google.android.material.appbar.AppBarLayout
+					android:id="@+id/app_bar"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:elevation="0dp">
+
+					<com.google.android.material.appbar.CollapsingToolbarLayout
+						android:id="@+id/toolbar_layout"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						app:contentScrim="#00ffffff"
+						app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+						<com.youth.banner.Banner
+							android:id="@+id/topBanner"
+							android:layout_width="match_parent"
+							android:layout_height="120dp"
+							android:background="@drawable/no_banner" />
+
+					</com.google.android.material.appbar.CollapsingToolbarLayout>
+
+				</com.google.android.material.appbar.AppBarLayout>
+
+
+				<!--订单列表-->
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/rv_body"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+				<!--无订单-->
+				<FrameLayout
+					android:id="@+id/llNoOrder"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:visibility="gone"
+					app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginTop="110dp"
+						android:drawableTop="@mipmap/ic_launcher"
+						android:drawablePadding="22dp"
+						android:gravity="center"
+						android:lineSpacingExtra="6dp"
+						android:text="附近暂无配送任务\n请耐心等待，并手动刷新"
+						android:textSize="14sp" />
+				</FrameLayout>
+
+				<!--身份认证未通过-->
+				<ViewStub
+					android:id="@+id/vsVerifyUnpass"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout="@layout/viewstub_waiting_order_verify_unpass"
+					android:visibility="gone" />
+
+
+			</androidx.coordinatorlayout.widget.CoordinatorLayout>
+		</LinearLayout>
+
+		<!--身份未认证-->
+		<ViewStub
+			android:id="@+id/vs_verify"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout="@layout/viewstub_waiting_order_verify"
+			android:visibility="visible" />
+		<!--身份审核中-->
+		<ViewStub
+			android:id="@+id/vsVerifying"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout="@layout/viewstub_waiting_order_verifying"
+			android:visibility="gone" />
+
+		<Button
+			android:id="@+id/btn_refresh"
+			android:layout_width="54dp"
+			android:layout_height="54dp"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="44dp"
+			android:background="@drawable/main_bttom_btn_refresh_bg"
+			android:text="刷新"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/sp_14" />
+
+	</RelativeLayout>
+</com.oomall.kouclodelivery.ui.widget.SlidingConfictSwipeRefreshLayout>

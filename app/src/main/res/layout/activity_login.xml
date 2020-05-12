@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.view.account.LoginActivity">
+
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="210dp"
+		android:background="@color/btnNormal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal|bottom"
+			android:layout_marginBottom="30dp"
+			android:drawableTop="@drawable/login_top_logo"
+			android:drawablePadding="6dp"
+			android:gravity="center"
+			android:text="@string/app_name"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/sp_20"
+			android:textStyle="bold" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:background="@drawable/login_top__hu" />
+	</FrameLayout>
+
+	<androidx.appcompat.widget.AppCompatEditText
+		android:id="@+id/etUserPhone"
+		style="@style/EtNormal.ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="40dp"
+		android:drawableStart="@drawable/login_user_name"
+		android:drawablePadding="10dp"
+		android:hint="@string/login_et_phone_hint"
+		android:inputType="number"
+		android:maxLength="11"
+		android:textColor="@color/color333"
+		android:textColorHint="@color/color666"
+		android:textSize="@dimen/sp_14" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/splitLine" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="10dp"
+		android:gravity="bottom"
+		android:orientation="horizontal">
+
+
+		<androidx.appcompat.widget.AppCompatEditText
+			android:id="@+id/etCode"
+			style="@style/EtNormal.ParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:drawableStart="@drawable/login_password"
+			android:drawablePadding="10dp"
+			android:gravity="center_vertical"
+			android:hint="@string/login_et_code_hint"
+			android:inputType="number"
+			android:textColor="@color/color333"
+			android:textColorHint="@color/color666"
+			android:textSize="@dimen/sp_14" />
+
+		<TextView
+			android:id="@+id/tvGetVerifyCode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/parent_margin"
+			android:text="@string/login_tv_get_code"
+			android:textColor="@color/colorAccent"
+			android:textSize="@dimen/sp_14" />
+
+		<androidx.appcompat.widget.AppCompatEditText
+			android:id="@+id/etPassword"
+			style="@style/EtNormal.ParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:digits="@string/password_digits"
+			android:drawableStart="@drawable/login_password"
+			android:drawablePadding="10dp"
+			android:gravity="center_vertical"
+			android:hint="@string/login_et_password_hint"
+			android:inputType="textPassword"
+			android:textColor="@color/color333"
+			android:textColorHint="@color/color666"
+			android:textSize="@dimen/sp_14"
+			android:visibility="gone" />
+
+		<androidx.appcompat.widget.AppCompatCheckBox
+			android:id="@+id/cbPassword"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/parent_margin"
+			android:button="@drawable/login_button_cb"
+			android:visibility="gone" />
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/splitLine" />
+
+	<com.oomall.kouclodelivery.ui.widget.SlitherVerifyView
+		android:id="@+id/v_slither_verify"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginStart="@dimen/parent_margin"
+		android:layout_marginTop="20dp"
+		android:layout_marginEnd="@dimen/parent_margin" />
+
+
+	<TextView
+		android:id="@+id/btnLogin"
+		style="@style/BtnNormal.ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="24dp"
+		android:gravity="center"
+		android:text="@string/login_login_register"
+		android:textColor="#2b201d"
+		android:textSize="@dimen/sp_17" />
+
+	<TextView
+		android:id="@+id/tvGoPasswordLogin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="20dp"
+		android:text="账号密码登录"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_14" />
+
+	<RelativeLayout
+		android:id="@+id/rlPassLogin"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/parent_margin"
+		android:layout_marginTop="20dp"
+		android:layout_marginEnd="@dimen/parent_margin"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/tvGoVerifyCodeLogin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="手机验证录"
+			android:textColor="@color/color666"
+			android:textSize="@dimen/sp_14" />
+
+		<TextView
+			android:id="@+id/tvForgetPassword"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:text="忘记密码？"
+			android:textColor="@color/btnNormal"
+			android:textSize="@dimen/sp_14" />
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="bottom|center_horizontal"
+		android:orientation="horizontal"
+		android:paddingBottom="20dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="注册登陆即代表同意"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_14" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="《抠抠快送用户协议》"
+			android:textColor="@color/btnNormal"
+			android:textSize="@dimen/sp_14" />
+	</LinearLayout>
+
+
+</LinearLayout>

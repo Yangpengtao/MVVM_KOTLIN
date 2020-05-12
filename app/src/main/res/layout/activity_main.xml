@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/drawer_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:context=".ui.view.main.MainActivity">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout
+			android:id="@+id/main_tile_bar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/title_height"
+			android:background="@color/titleColor">
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/title_left_img"
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				android:layout_centerVertical="true"
+				android:layout_marginStart="@dimen/parent_margin"
+				android:layout_marginLeft="@dimen/parent_margin"
+				android:onClick="openDrawer"
+				android:textColor="@android:color/white"
+				app:srcCompat="@drawable/ic_format_list_bulleted_black_24dp" />
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/title_right_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/parent_margin"
+				android:onClick="openMsg"
+				app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+
+			<LinearLayout
+				android:layout_width="200dp"
+				android:layout_height="42dp"
+				android:layout_centerInParent="true"
+				android:gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<TextView
+					android:id="@+id/tv_waiting_order"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:drawableBottom="@drawable/main_top_tv_drawable_selector"
+					android:gravity="center"
+					android:text="待接单"
+					android:textColor="@drawable/main_top_tv_selector"
+					android:textSize="18sp" />
+
+				<FrameLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+
+					<TextView
+						android:id="@+id/tv_received_order"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:drawableBottom="@drawable/main_top_tv_drawable_selector"
+						android:gravity="center"
+						android:text="已接单"
+						android:textColor="@drawable/main_top_tv_selector"
+						android:textSize="18sp" />
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="right"
+						android:background="@drawable/common_msg_bg"
+						android:paddingLeft="6dp"
+						android:paddingRight="6dp"
+						android:text="12"
+						android:textColor="@android:color/white"
+						android:textSize="@dimen/sp_12" />
+				</FrameLayout>
+			</LinearLayout>
+
+
+		</RelativeLayout>
+
+
+		<com.oomall.kouclodelivery.ui.widget.CustomScrollViewPager
+			android:id="@+id/vp_body"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/main_tile_bar" />
+
+
+	</RelativeLayout>
+
+	<com.google.android.material.navigation.NavigationView
+		android:id="@+id/nav_view"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		android:fitsSystemWindows="true"
+		app:headerLayout="@layout/nav_header_main"
+		app:menu="@menu/activity_main_drawer" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

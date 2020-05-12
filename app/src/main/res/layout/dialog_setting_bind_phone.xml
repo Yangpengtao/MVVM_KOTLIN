@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/common_dialog_bg"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="18dp"
+		app:srcCompat="@drawable/setting_dialog_phone" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:gravity="center"
+		android:layout_marginEnd="22dp"
+		android:layout_marginStart="22dp"
+		android:lineSpacingExtra="6dp"
+		android:text="此手机号已在平台实名注册，不可被\n绑定请更换其它的手机号\n若仍需更改，请拨打客服电话"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_12" />
+
+	<TextView
+		android:id="@+id/tvPhoneNumber"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="@string/service_phone"
+		android:textColor="@color/colorAccent"
+		android:textSize="@dimen/sp_12" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="20dp"
+		android:background="@color/lineColor" />
+
+	<TextView
+		android:id="@+id/tvIKnow"
+		android:layout_width="match_parent"
+		android:layout_height="32dp"
+		android:gravity="center"
+		android:text="我知道了"
+		android:textColor="@color/colorAccent"
+		android:textSize="@dimen/sp_12" />
+
+
+</LinearLayout>

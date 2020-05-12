@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.oomall.kouclodelivery">
+	<!-- 用于访问网络，网络定位需要上网 -->
+	<uses-permission android:name="android.permission.INTERNET" /> <!-- 用于用户拍照 -->
+	<uses-permission android:name="android.permission.CAMERA" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于向扩展卡读取数据 -->
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 用于读取手机当前的状态 -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序获取网络状态 -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许程序访问WiFi网络信息 -->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定 -->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于申请调用A-GPS模块 -->
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+	<uses-feature
+		android:name="android.hardware.camera"
+		android:required="true" />
+	<uses-feature
+		android:name="android.hardware.camera.autofocus"
+		android:required="true" />
+	<!--android:roundIcon="@mipmap/ic_launcher_round"-->
+
+	<application
+		android:name=".KoucloApplication"
+		android:allowBackup="false"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:networkSecurityConfig="@xml/network_security_config"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme.State_33Tran"
+		tools:targetApi="n">
+		<activity
+			android:name=".ui.view.account.SetPasswordActivity"
+			android:label="设置登陆密码——设置新密码"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.account.PhoneNumberVerifyActivity"
+			android:label="手机号验证"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.order.PhotoPreviewOrderActivity"
+			android:label="订单照预览"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.order.CameraOrderActivity"
+			android:label="骑手拍订单照"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.popularize.MyInvitationActivity"
+			android:label="我的邀请"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.verify.PhotoPreviewActivity"
+			android:label="相机-》图片预览"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Camera" />
+		<activity
+			android:name=".ui.view.verify.CameraActivity"
+			android:label="相机"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Camera" />
+		<activity
+			android:name=".ui.view.my_wallet.AccountDetailsActivity"
+			android:label="账目明细"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.setting.SettingActivity"
+			android:label="设置"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.popularize.PopularizeActivity"
+			android:label="推广赚钱"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.help_center.HelpCenterActivity"
+			android:label="帮助中心"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.history_details.HistoryDetailsActivity"
+			android:label="历史明细"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.my_wallet.CreateBankActivity"
+			android:label="创建银行卡"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.my_wallet.WithdrawDepositActivity"
+			android:label="提现"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.my_wallet.MyWalletActivity"
+			android:label="我的钱包"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.verify.IdentificationActivity"
+			android:label="身份认证页面"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.order.RoutePlanningActivity"
+			android:label="路线规划页面"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.FullScreen" />
+		<activity
+			android:name=".ui.view.order.OrderDetailsActivity"
+			android:label="订单详情"
+			android:screenOrientation="portrait" />
+		<activity
+			android:name=".ui.view.LauncherActivity"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.FullScreen.WindowBg">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<action android:name="android.intent.action.VIEW" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".ui.view.account.LoginActivity"
+			android:label="登陆页面"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.FullScreen" />
+		<activity
+			android:name=".ui.view.main.MainActivity"
+			android:label="首页"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait" />
+
+		<meta-data
+			android:name="com.amap.api.v2.apikey"
+			android:value="d712e5da0c5b3c2d1056e478bfda2703" /> <!-- 高德地图 -->
+		<service android:name="com.amap.api.location.APSService" /> <!-- 高德地图 -->
+		<meta-data
+			android:name="android.max_aspect"
+			android:value="2.34" />
+
+		<provider
+			android:name="androidx.core.content.FileProvider"
+			android:authorities="com.oomall.kouclodelivery.fileprovider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/file_paths" />
+		</provider>
+	</application>
+
+</manifest>

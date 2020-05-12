@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="140dp"
+		app:srcCompat="@drawable/main_verify_weishenhe" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="42dp"
+		android:textColor="@color/color333"
+		android:text="身份认证后即可接单，快去认证吧"
+		android:textSize="@dimen/sp_14" />
+
+	<Button
+		android:id="@+id/btn_verify"
+		style="@style/BtnNormal"
+		android:layout_width="146dp"
+		android:layout_height="40dp"
+		android:layout_marginTop="20dp"
+		android:text="立即认证"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

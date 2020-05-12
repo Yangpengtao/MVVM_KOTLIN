@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="140dp"
+	android:background="@color/btnNormal"
+	android:fitsSystemWindows="true"
+	android:gravity="center_vertical"
+	android:orientation="horizontal">
+
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/imageView"
+		style="@style/LeftParentMargin"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		app:srcCompat="@mipmap/ic_launcher" />
+
+	<LinearLayout
+		style="@style/LeftParentMargin"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/textView"
+			android:layout_width="wrap_content"
+			android:layout_height="18dp"
+			android:text="抠抠骑手"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="18dp"
+			android:layout_marginTop="10dp"
+			android:text="159***000000"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+	</LinearLayout>
+
+
+</LinearLayout>

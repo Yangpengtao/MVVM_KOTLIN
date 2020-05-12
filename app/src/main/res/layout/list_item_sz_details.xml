@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:id="@+id/tvTime"
+		style="@style/LeftParentMargin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="0000-00-00  00:00"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_14" />
+
+	<RelativeLayout
+		android:layout_width="wrap_content"
+		android:layout_marginTop="16dp"
+		android:layout_height="wrap_content" >
+
+		<TextView
+			android:id="@+id/tvExplain"
+			style="@style/LeftParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="取消扣款"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+
+		<TextView
+			android:id="@+id/tvPrice"
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="6.2"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentEnd="true"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_16" />
+
+	</RelativeLayout>
+
+	<TextView
+		android:id="@+id/tvNumber"
+		style="@style/LeftParentMargin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:text="运单号00000000000000"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_14" />
+
+
+</LinearLayout>

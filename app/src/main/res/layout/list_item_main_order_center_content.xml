@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	style="@style/ParentMargin"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal">
+
+	<!--有机会换成 控制布局-->
+	<TextView
+		android:id="@+id/text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:drawableStart="@drawable/main_listitem_qu"
+		android:drawablePadding="6dp"
+		android:gravity="center_vertical"
+		android:text="0.6km"
+		android:textColor="@color/color999"
+		android:textSize="@dimen/sp_12" />
+
+	<View
+		android:id="@+id/line1"
+		android:layout_width="1dp"
+		android:layout_height="wrap_content"
+		android:layout_above="@+id/text2"
+		android:layout_below="@id/text"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:background="@drawable/vertical_line"
+		android:layerType="hardware" />
+
+	<TextView
+		android:id="@+id/text2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/text4"
+		android:drawableStart="@drawable/main_listitem_song"
+		android:drawablePadding="6dp"
+		android:gravity="center_vertical"
+		android:text="0.5km"
+		android:textColor="@color/color999"
+		android:textSize="@dimen/sp_12" />
+
+
+	<TextView
+		android:id="@+id/text3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginBottom="6dp"
+		android:layout_toEndOf="@id/text"
+		android:layout_toRightOf="@id/text"
+		android:text="麦当劳（建国门店）"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+	<TextView
+		android:id="@+id/text4"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/text3"
+		android:layout_marginStart="10dp"
+		android:layout_marginBottom="20dp"
+		android:layout_toEndOf="@id/text"
+		android:text="建外soho17号楼二层商铺"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_14" />
+
+	<TextView
+		android:id="@+id/text53"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/text2"
+		android:layout_marginStart="10dp"
+		android:layout_toEndOf="@id/text2"
+		android:text="富力城A区2号楼999室"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		app:srcCompat="@drawable/main_listitem_phone" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/image1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="0dp"
+		android:layout_marginEnd="10dp"
+		android:layout_toStartOf="@id/image"
+		app:srcCompat="@drawable/main_listitem_daohang" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/image2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignTop="@id/text2"
+		android:layout_alignParentEnd="true"
+		app:srcCompat="@drawable/main_listitem_phone_h" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/image3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="10dp"
+		android:layout_alignTop="@id/text2"
+		android:layout_toStartOf="@id/image2"
+		app:srcCompat="@drawable/main_listitem_daohang" />
+
+</RelativeLayout>

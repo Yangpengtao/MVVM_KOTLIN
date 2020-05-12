@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+	<!--调用系统相机和系统相册必须使用 《external-》-->
+	<cache-path
+		name="my_http"
+		path="http_cache" />
+	<external-cache-path
+		name="my_images"
+		path="images_cache/" />
+	<external-files-path
+		name="my_apk"
+		path="apk/" />
+	<external-files-path
+		name="my_crash"
+		path="crash_log/" />
+</paths>

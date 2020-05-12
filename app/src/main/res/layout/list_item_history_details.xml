@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		style="@style/ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center_vertical">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="4月19日"
+			android:textColor="@color/color666"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:text="完成1单  取消0单" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center_vertical">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="09:21送达"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:text="结算中7.2中"
+			android:textColor="@color/color333" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		style="@style/ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="100dp">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableStart="@drawable/ic_format_list_bulleted_black_24dp"
+				android:drawablePadding="20dp"
+				android:text="卫衣"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/sp_20" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:drawableStart="@drawable/ic_format_list_bulleted_black_24dp"
+				android:drawablePadding="20dp"
+				android:text="xxx建国门（x号xx室）"
+				android:textColor="@android:color/black"
+				android:textSize="@dimen/sp_20" />
+		</LinearLayout>
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+	</RelativeLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/lineColor" />
+
+	<TextView
+		style="@style/LeftParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:gravity="center_vertical"
+		android:text="运单号： xxxxx"
+		android:textColor="@color/color666"
+		android:textSize="@dimen/sp_16" />
+
+
+</LinearLayout>

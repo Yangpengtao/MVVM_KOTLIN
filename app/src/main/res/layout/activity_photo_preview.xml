@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.view.verify.PhotoPreviewActivity">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@color/color333" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/ivPreview"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="@android:color/white" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="68dp"
+		android:background="@color/color333">
+
+		<TextView
+			android:id="@+id/tvRestart"
+			style="@style/LeftParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="重拍"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			android:id="@+id/tvUse"
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:text="使用照片"
+			android:textColor="@android:color/white"
+			android:textSize="@dimen/sp_16" />
+	</RelativeLayout>
+
+</LinearLayout>

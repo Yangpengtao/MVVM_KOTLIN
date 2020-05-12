@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:background="@drawable/dialog_bg_update"
+	android:gravity="center_horizontal"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="80dp"
+		android:text="更新提示"
+		android:textColor="@android:color/black"
+		android:textSize="18sp" />
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="140dp"
+		android:layout_marginStart="@dimen/parent_margin"
+		android:layout_marginTop="12dp"
+		android:layout_marginEnd="@dimen/parent_margin">
+
+		<TextView
+			android:id="@+id/txt_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:lineSpacingExtra="4dp"
+			android:text="1、 版特性版特性\n1、 版特性\n1、 版特性\n"
+			android:textColor="#333333"
+			android:textSize="14sp" />
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="180dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="12dp"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btnUpdate"
+			style="?android:attr/buttonBarStyle"
+			android:layout_width="70dp"
+			android:layout_height="30dp"
+			android:background="@drawable/common_btn_bg"
+			android:text="更新"
+			android:textColor="@android:color/white"
+			android:textSize="12sp" />
+
+		<Button
+			android:id="@+id/btnCancel"
+			style="?android:attr/buttonBarStyle"
+			android:layout_width="70dp"
+			android:layout_height="30dp"
+			android:layout_marginStart="20dp"
+			android:background="@drawable/common_btn_bg"
+			android:text="关闭"
+			android:textColor="@android:color/white"
+			android:textSize="12sp" />
+
+
+	</LinearLayout>
+
+</LinearLayout>

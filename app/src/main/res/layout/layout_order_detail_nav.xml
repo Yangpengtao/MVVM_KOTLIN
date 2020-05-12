@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+	<!--路径规划-->
+
+	<TextView
+		style="@style/TvNormal.TitleStyle"
+		android:gravity="center_vertical"
+		android:text="路径规划"
+		tools:ignore="RtlSymmetry" />
+
+	<com.oomall.kouclodelivery.ui.widget.MapContainer
+		android:id="@+id/mapContainer"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<com.amap.api.maps2d.MapView
+			android:id="@+id/map_view"
+			android:layout_width="match_parent"
+			android:layout_height="200dp" />
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/iv_go_route_planing"
+			app:srcCompat="@drawable/ic_notifications_black_24dp"
+			android:layout_width="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentBottom="true"
+			android:layout_margin="@dimen/parent_margin"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true" />
+	</com.oomall.kouclodelivery.ui.widget.MapContainer>
+
+</LinearLayout>

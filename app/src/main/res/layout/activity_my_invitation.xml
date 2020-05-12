@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.view.popularize.MyInvitationActivity">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="24dp"
+		android:text="累计获得奖励"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="24dp"
+		android:text="0"
+		android:textColor="@color/colorAccent"
+		android:textSize="@dimen/sp_18" />
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textColor="@color/colorAccent"
+				android:textSize="@dimen/sp_18" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:text="邀请成功"
+				android:textColor="@color/color333"
+				android:textSize="@dimen/sp_18" />
+		</LinearLayout>
+
+		<View
+			android:layout_width="1dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center_vertical"
+			android:background="@color/colorAccent" />
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0"
+				android:textColor="@color/colorAccent"
+				android:textSize="@dimen/sp_18" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:text="跑单成功"
+				android:textColor="@color/color333"
+				android:textSize="@dimen/sp_18" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<View
+		style="@style/ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="28dp"
+		android:background="@color/lineColor" />
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_marginTop="14dp"
+		android:layout_height="wrap_content">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="好友"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_18" />
+
+		<TextView
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:text="奖励金额"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_18" />
+	</RelativeLayout>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvInvitationPeople"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="10dp" />
+
+</LinearLayout>

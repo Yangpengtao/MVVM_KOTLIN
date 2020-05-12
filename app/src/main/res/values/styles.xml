@@ -1,0 +1,47 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<!--标题栏的颜色-->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<!--状态栏的颜色-->
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<!--默认的光标、选中的RadioButton颜色-->
+		<item name="colorAccent">@color/colorAccent</item>
+		<!-- 避免控件会顶到状态栏上 -->
+		<item name="android:fitsSystemWindows">true</item>
+		<!--设置没有标题栏-->
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme.Camera">
+		<!--状态栏的颜色-->
+		<item name="colorPrimaryDark">@color/color333</item>
+	</style>
+
+	<!-- 状态栏33透明度-->
+	<style name="AppTheme.State_33Tran" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimaryDark">#33000000</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<!-- 全屏-->
+	<style name="AppTheme.FullScreen" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="windowNoTitle">true</item>
+		<item name="android:windowFullscreen">true</item>
+	</style>
+
+	<!--启动页-->
+	<style name="AppTheme.FullScreen.WindowBg">
+		<item name="android:windowBackground">@drawable/b_8</item>
+	</style>
+	<!--启动页-->
+	<style name="AppTheme.FullScreen.DialogBg" parent="Theme.AppCompat.Dialog">
+		<item name="android:windowElevation">0dp</item>
+
+	</style>
+</resources>

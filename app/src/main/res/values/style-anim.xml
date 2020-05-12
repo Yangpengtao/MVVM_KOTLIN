@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<style name="PopBottom" parent="Theme.AppCompat.Dialog">
+		<item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+		<item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+	</style>
+</resources>

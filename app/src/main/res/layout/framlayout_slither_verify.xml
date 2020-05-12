@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:focusable="false"
+	android:focusableInTouchMode="false"
+	android:layout_height="40dp">
+
+	<View
+		android:id="@+id/v_slither_right"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/slither_veirfy_right" />
+
+	<View
+		android:id="@+id/v_slither_left"
+		android:layout_width="80dp"
+		android:layout_height="match_parent"
+		android:background="@drawable/slither_veirfy_left" />
+
+	<TextView
+		android:id="@+id/tv_slither_tip"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		android:text="@string/login_slither_no"
+		android:textColor="@color/color999"
+		android:textSize="20sp" />
+
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/v_slither_btn"
+		android:layout_width="80dp"
+		android:layout_height="match_parent"
+		android:background="@drawable/login_btn_verify_unpass" />
+
+	<View
+		android:id="@+id/v_slither_btn_normal"
+		android:layout_width="80dp"
+		android:layout_height="match_parent" />
+</FrameLayout>

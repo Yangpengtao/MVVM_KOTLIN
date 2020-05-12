@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="navigation_view">
+
+	<group android:checkableBehavior="single">
+		<!--<item android:id="@+id/main_menu_pickup_setting" android:title="接单设置（预留）" />-->
+		<item
+			android:id="@+id/main_menu_historical_details"
+			android:title="历史明细" />
+		<item
+			android:id="@+id/main_menu_my_wallet"
+			android:title="我的钱包" />
+		<item
+			android:id="@+id/main_menu_help_center"
+			android:title="帮助中心" />
+		<!--<item android:id="@+id/main_menu_platform_Instruction" android:title="平台须知" />-->
+		<item
+			android:id="@+id/main_menu_popularize"
+			android:title="推广赚钱" />
+		<!--<item android:id="@+id/main_menu_value_service" android:title="增值服务（预留）" />-->
+		<item
+			android:id="@+id/main_menu_setting"
+			android:title="设置" />
+	</group>
+
+
+</menu>

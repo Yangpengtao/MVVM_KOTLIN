@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="24dp"
+			android:text="30.30"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/sp_18" />
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+			android:layout_marginBottom="10dp"
+			android:text="0000-00-00 00:00"
+			android:textColor="@color/color666"
+			android:textSize="@dimen/sp_16" />
+	</LinearLayout>
+
+	<TextView
+		style="@style/RightParentMargin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_marginTop="4dp"
+		android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+		android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+		android:text="已成功"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_18" />
+</RelativeLayout>

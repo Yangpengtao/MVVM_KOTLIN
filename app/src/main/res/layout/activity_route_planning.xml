@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.view.order.RoutePlanningActivity">
+
+
+	<com.amap.api.maps2d.MapView
+		android:id="@+id/route_map_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" />
+
+	<androidx.appcompat.widget.AppCompatImageButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/parent_margin"
+		android:background="@android:color/white"
+		android:onClick="backPage"
+		app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+		tools:ignore="OnClick" />
+
+	<Button
+		android:id="@+id/btn_go_navi"
+		style="@style/BtnNormal.ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="20dp"
+		android:text="导航去商家"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_14" />
+
+
+</RelativeLayout>

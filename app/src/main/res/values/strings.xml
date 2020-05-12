@@ -1,0 +1,18 @@
+<resources>
+	<string name="app_name" translatable="false">抠抠快送</string>
+	<string name="login_et_phone_hint" translatable="false">请输入手机号</string>
+	<string name="login_et_code_hint" translatable="false">请输入验证码</string>
+	<string name="login_tv_get_code" translatable="false">获取验证码</string>
+	<string name="login_et_password_hint" translatable="false">请输入密码</string>
+	<string name="login_slither_no" translatable="false">拖动滑块验证</string>
+	<string name="login_slither_pass" translatable="false">验证通过</string>
+	<string name="login_login_register" translatable="false">注册/登录</string>
+	<string name="login_login" translatable="false">登录</string>
+	<string name="password_digits"> ._/\!@#$%^?+-*()=:.0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ </string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+	<string name="navigation_drawer_open" translatable="false">aaaa</string>
+	<string name="navigation_drawer_close" translatable="false">bbbbb</string>
+	<string name="service_phone">400-8820-820</string>
+</resources>

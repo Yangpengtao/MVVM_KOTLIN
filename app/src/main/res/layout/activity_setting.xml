@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.view.setting.SettingActivity">
+
+	<LinearLayout
+		android:id="@+id/llHeadPhoto"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="1dp"
+		android:background="@android:color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="头像"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/ivPhoto"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_marginEnd="10dp"
+			app:srcCompat="@drawable/ic_format_list_bulleted_black_24dp" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/llPhoneNumber"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="1dp"
+		android:background="@android:color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="手机号"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="138****1212"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="1dp"
+		android:background="@android:color/white"
+		android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+		android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+		android:gravity="center_vertical"
+		android:paddingStart="@dimen/parent_margin"
+		android:paddingEnd="@dimen/parent_margin"
+		android:text="我的邀请码"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="1dp"
+		android:background="@android:color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="客服电话"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="138****1212"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="1dp"
+		android:background="@android:color/white"
+		android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+		android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+		android:gravity="center_vertical"
+		android:paddingStart="@dimen/parent_margin"
+		android:paddingEnd="@dimen/parent_margin"
+		android:text="用户服务协议"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:layout_marginTop="1dp"
+		android:background="@android:color/white"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			style="@style/LeftParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="当前版本"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="1.00"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_16" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			style="@style/RightParentMargin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+	</LinearLayout>
+
+
+	<Button
+		style="@style/BtnNormal.ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="50dp"
+		android:text="退出登录"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_16" />
+
+</LinearLayout>

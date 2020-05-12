@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.view.account.PhoneNumberVerifyActivity">
+
+	<TextView
+		style="@style/LeftParentMargin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="36dp"
+		android:text="手机号验证"
+		android:textColor="@color/color333"
+		android:textSize="@dimen/sp_24" />
+
+	<TextView
+		style="@style/LeftParentMargin"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="36dp"
+		android:text="手机短信将收到4位数字验证码"
+		android:textColor="@color/color999"
+		android:textSize="@dimen/sp_18" />
+
+	<androidx.appcompat.widget.AppCompatEditText
+		android:id="@+id/etUserPhone"
+		style="@style/EtNormal.ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="60dp"
+		android:drawableStart="@drawable/common_btn_bg"
+		android:drawablePadding="10dp"
+		android:hint="@string/login_et_phone_hint"
+		android:inputType="number"
+		android:maxLength="11"
+		android:textColor="@color/color333"
+		android:textColorHint="@color/color666"
+		android:textSize="@dimen/sp_14" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/splitLine" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+
+		<androidx.appcompat.widget.AppCompatEditText
+			android:id="@+id/etCode"
+			style="@style/EtNormal.ParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_weight="1"
+			android:drawableStart="@drawable/common_btn_bg"
+			android:drawablePadding="10dp"
+			android:gravity="center_vertical"
+			android:hint="@string/login_et_code_hint"
+			android:inputType="number"
+			android:textColor="@color/color333"
+			android:textColorHint="@color/color666"
+			android:textSize="@dimen/sp_14" />
+
+		<TextView
+			android:id="@+id/tvGetVerifyCode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/parent_margin"
+			android:text="@string/login_tv_get_code"
+			android:textColor="@color/color666"
+			android:textSize="@dimen/sp_14" />
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/splitLine" />
+
+	<Button
+		android:id="@+id/btnNext"
+		style="@style/BtnNormal.ParentMargin"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="30dp"
+		android:text="下一步"
+		android:textColor="#2b201d"
+		android:textSize="18sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		tools:context=".ui.view.verify.IdentificationActivity">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/parent_margin"
+			android:text="请使用本人身份证，注意身份证原件无覆膜、水渍、反光等。提交的资料仅用于实名认证，请放心上传"
+			android:textSize="@dimen/sp_12" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="身份证正面照"
+			android:textColor="@color/color999"
+			android:textSize="@dimen/sp_12" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/ivFrontPhoto"
+			android:layout_width="176dp"
+			android:layout_height="110dp"
+			android:layout_marginTop="14dp"
+			android:padding="4dp"
+			android:background="@drawable/verify_card_front"
+			android:scaleType="center"
+			android:src="@drawable/verify_card_upload" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="身份证反面照"
+			android:textColor="@color/color666"
+			android:textSize="@dimen/sp_12" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/ivBackPhoto"
+			android:layout_width="176dp"
+			android:layout_height="110dp"
+			android:layout_marginTop="14dp"
+			android:padding="4dp"
+			android:background="@drawable/verify_card_back"
+			android:scaleType="center"
+			android:src="@drawable/verify_card_upload" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="手持身份证照"
+			android:textColor="@color/color666"
+			android:textSize="@dimen/sp_12" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/ivHoldPhoto"
+			android:layout_width="176dp"
+			android:layout_height="110dp"
+			android:layout_marginTop="14dp"
+			android:background="@drawable/verify_card_hold"
+			android:padding="4dp"
+			android:scaleType="center"
+			android:src="@drawable/verify_card_upload" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:layout_gravity="left"
+			android:layout_marginTop="30dp"
+			android:background="#FAFAFA"
+			android:gravity="center_vertical"
+			android:paddingStart="@dimen/parent_margin"
+			android:paddingEnd="@dimen/parent_margin"
+			android:text="请输入身份证上的姓名和身份证号"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_14"
+			tools:ignore="RtlHardcoded" />
+
+		<LinearLayout
+			style="@style/ParentMargin"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="姓名"
+				android:textColor="@color/color333"
+				android:textSize="@dimen/sp_14" />
+
+			<androidx.appcompat.widget.AppCompatEditText
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="8"
+				android:background="@android:color/transparent"
+				android:hint="输入身份证上的姓名"
+				android:textColor="@color/color333"
+				android:textColorHint="@color/color999"
+				android:textSize="@dimen/sp_14" />
+		</LinearLayout>
+
+		<View
+			style="@style/ParentMargin"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/lineColor" />
+
+		<LinearLayout
+			style="@style/ParentMargin"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="20dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="2"
+				android:text="身份证号"
+				android:textColor="@color/color333"
+				android:textSize="@dimen/sp_14" />
+
+			<androidx.appcompat.widget.AppCompatEditText
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="8"
+				android:background="@android:color/transparent"
+				android:hint="输入身份证号"
+				android:textColor="@color/color333"
+				android:textColorHint="@color/color999"
+				android:textSize="@dimen/sp_14" />
+		</LinearLayout>
+
+		<View
+			style="@style/ParentMargin"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="@color/lineColor" />
+
+		<Button
+			style="@style/BtnNormal.ParentMargin"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="40dp"
+			android:layout_marginBottom="20dp"
+			android:text="保存提交"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_14" />
+
+	</LinearLayout>
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="6dp"
+		android:background="@drawable/main_list_item_shangchaodan_bg"
+		android:gravity="center"
+		android:text="商超单"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/sp_14" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="4dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/parent_margin"
+			android:layout_marginLeft="@dimen/parent_margin"
+			android:text="还剩45分钟送货"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_20" />
+
+		<View
+			android:layout_width="0dp"
+			android:layout_height="1dp"
+			android:layout_weight="1" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginEnd="@dimen/parent_margin"
+			android:layout_marginRight="@dimen/parent_margin"
+			android:text="#10"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_20" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:background="@color/lineColor" />
+
+	<include layout="@layout/list_item_main_order_center_content" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:orientation="horizontal">
+
+		<Button
+			style="@style/BtnNormal.ParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="20dp"
+			android:layout_weight="1"
+			android:background="@drawable/common_btn_bg_gray"
+			android:text="取消配送"
+			android:textColor="#939393"
+			android:textSize="@dimen/sp_14" />
+
+		<Button
+			android:id="@+id/btnGoTakePhoto"
+			style="@style/BtnNormal.ParentMargin"
+			android:layout_width="0dp"
+			android:layout_height="40dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="20dp"
+			android:layout_weight="1.3"
+			android:text="取货拍照并离开"
+			android:textColor="@color/color333"
+			android:textSize="@dimen/sp_14" />
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="4dp"
+		android:background="@color/lineColor" />
+
+
+</LinearLayout>
